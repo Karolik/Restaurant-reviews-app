@@ -154,15 +154,34 @@ class DBHelper {
   }
 
   /**
-   * Restaurant image alt.
+   * Restaurant small image URL.
    */
-  static imageAltForRestaurant(restaurant) {
-    return (`Photo of ${restaurant.name}`);
+  static smallImageUrlForRestaurant(restaurant) {
+    return (`/img/${restaurant.small_photo}`);   // to change for a different source name (also the other url change the name of photos)
   }
 
   /**
+   * Restaurant image alt.
+   */
+  static imageAltForRestaurant(restaurant) {
+    return (`${restaurant.alt}`);
+  }
+
+/**
    * Map marker for a restaurant.
    */
+  static mapMarkerForRestaurant(restaurant, map) {
+    // https://leafletjs.com/reference-1.3.0.html#marker  
+    const marker = new L.marker([restaurant.latlng.lat, restaurant.latlng.lng],
+      {title: restaurant.name,
+      alt: restaurant.name,
+      url: DBHelper.urlForRestaurant(restaurant)
+      })
+      marker.addTo(newMap);
+    return marker;
+  } 
+
+  /*
   static mapMarkerForRestaurant(restaurant, map) {
     const marker = new google.maps.Marker({
       position: restaurant.latlng,
@@ -173,5 +192,5 @@ class DBHelper {
     );
     return marker;
   }
-
+  */
 }
