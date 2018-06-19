@@ -17,9 +17,23 @@ header, nav, footer {
     align-content: center;
 }
 
-/*.title {
-    align-self: center;
-}*/
+figure, picture {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-details {
+    display: block;
+    height: 130px;
+}
+
+.h1-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 80px;
+}
 
 #maincontent {
     display: flex;
@@ -37,14 +51,33 @@ header, nav, footer {
 
 img {
     max-width: 100%;
-    /*height: auto; */
 }
 
-@media screen and (max-width: 499px) {
+#map-container {
+    display: flex;
+    height: 180px;
+    width: 100%;
+    /*position: relative;
+    right: 0;
+    top: 80px;*/
+    /*justify-content: center;*/
+}
+
+.middle-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 599px) {
     /* ====================== Home and Restaurant.html ====================== */
     .title {
         /*align-self: center;*/
-        font: 3em;
+        font-size: 30px;
     }
     nav h1 a {
         letter-spacing: 2px;
@@ -56,14 +89,14 @@ img {
     }
     #map-container{
         /*display: flex;*/
-        height: 160px;
+        height: 250px;
         width: 100%;
         /*position: relative;*/
         right: 0;
         /*top: 80px; */
     }
     #map {
-        height: 160px;
+        height: 250px;
         width: 100%;
     }
     /* ====================== Restaurant details page ====================== */
@@ -77,25 +110,41 @@ img {
     }
     #breadcrumb {
         width: 100%;
-        font-size: 2em;
+        font-size: 22px;
     }
     .inside #map-container {
         /*display: flex;*/
         width: 100%;
-        height: 160px;
+        height: 250px;
         position: relative;
         top: 130.8px;
+        padding: 0;
     }
     .inside #map {
-        height: 160px;
+        height: 250px;
         width: 100%;
+    }
+    /**Zoom and Logo of the map should not be above fixed elements when page is scrolled **/
+    .inside #map > div.leaflet-control-container > div.leaflet-top,
+    .inside #map > div.leaflet-control-container > div.leaflet-bottom {
+        position: static;
+    }
+    .inside #map > div.leaflet-control-container > div.leaflet-bottom {
+        padding-top: 117px;
     }
     .inside #restaurant-container {
         width: 100%;
         margin: auto;
     }
+    #restaurant-container, #reviews-container {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
     #restaurant-name {
         text-align: center;
+    }
+    .inside #restaurant-img {
+        width: 100%;
     }
     .inside #reviews-container {
         width: 100%;
@@ -111,7 +160,6 @@ img {
         width: 100%;
     }
     .filter-options {
-        display: flex;
         width: 100%;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -131,11 +179,13 @@ img {
         width: 100%;
         justify-content: center;
         padding: 5px;
+        
     }
     #restaurants-list li {
         width: 100%;
         padding: 0;
         margin: auto;
+        margin-bottom: 12px;
     }
     #restaurants-list .restaurant-img {
         width: 100%;
@@ -151,18 +201,83 @@ img {
     }
 }
 
-@media screen and (min-width: 655px) and (max-width: 775px) {
-   /* .flex-projects {
-      flex-flow: row wrap;
-      justify-content: space-around;
-      padding-right: 1em;
-    }
-  
-    .project{
-      margin: 0 1em;
-    } 
-
-    img {
-
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    /*body {
+        width: 720px;
     }*/
-  }
+    #maincontent {
+        padding: 0 20px;
+    }
+    #map-container {
+        width: 60%;
+        justify-content: center;
+        /*padding: 0 70px;*/
+    }
+    #map {
+        width: 100%;
+        /*align-self: center;
+        margin: auto; -- it doesn't work*/
+    }
+    #restaurants-list {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /**Zoom and Logo of the map should not be above fixed elements when page is scrolled **/
+    .inside #map > div.leaflet-control-container > div.leaflet-top,
+    .inside #map > div.leaflet-control-container > div.leaflet-bottom {
+        position: static;
+    }
+    .inside #map > div.leaflet-control-container > div.leaflet-bottom {
+        padding-top: 225px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .filter-options select {
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /****-Rest details*****/
+    #maincontent {
+        /*width: 70%;*/
+        padding: 0 90px;
+    }
+    #breadcrumb li {
+        font-size: 17px;
+    }
+    #restaurant-img {
+        width: 75%;
+    }
+    #restaurant-cuisine {
+        width: 75%;
+    }
+    .middle-nav {
+        display: flex;
+    }
+    #map-container {
+        width: 40%;
+        min-width: 320px;
+        /*width: 330px;*/
+        height: 240px;
+        padding: 0 20px;
+    }
+    #map {
+        height: 240px;
+        width: 100%;
+    }
+    .filter-options {
+        width: 60%;
+        height: 60px;
+    }
+    /**Zoom and Logo of the map should not be above fixed elements when page is scrolled **/
+    /*.leaflet-top, .leaflet-bottom {*/
+    .inside #map > div.leaflet-control-container > div.leaflet-top,
+    .inside #map > div.leaflet-control-container > div.leaflet-bottom {
+        position: static;
+    }
+    .inside #map > div.leaflet-control-container > div.leaflet-bottom {
+        padding-top: 230px;
+    }
+}
