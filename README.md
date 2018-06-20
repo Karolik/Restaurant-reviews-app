@@ -1,6 +1,5 @@
 # Frontend-nanodegree-restaurant-reviews-app
 ---
-===============================
 
 ## Table of Contents
 
@@ -59,6 +58,7 @@ This project is licensed under the General License
 * My mentor, Neil, for the guidance, support and motivation
 * https://www.w3schools.com/
 * https://developer.mozilla.org/
+* https://css-tricks.com/
 
 
 
