@@ -73,10 +73,16 @@ img {
     justify-content: space-between;
 }
 
+/* Style of the focussed element */
+:focus {
+    outline: 1px dotted #3740a8;
+    box-shadow: 0 0 8px 3px
+    rgba(255, 255, 255, 0.8);
+}
+
 @media screen and (max-width: 599px) {
     /* ====================== Home and Restaurant.html ====================== */
     .title {
-        /*align-self: center;*/
         font-size: 30px;
     }
     nav h1 a {
@@ -89,14 +95,14 @@ img {
     }
     #map-container{
         /*display: flex;*/
-        height: 250px;
+        height: 360px;
         width: 100%;
         /*position: relative;*/
         right: 0;
         /*top: 80px; */
     }
     #map {
-        height: 250px;
+        height: 360px;
         width: 100%;
     }
     /* ====================== Restaurant details page ====================== */
@@ -210,11 +216,13 @@ img {
     }
     #map-container {
         width: 60%;
+        height: 350px;
         justify-content: center;
         /*padding: 0 70px;*/
     }
     #map {
         width: 100%;
+        height: 350px;
         /*align-self: center;
         margin: auto; -- it doesn't work*/
     }
@@ -242,7 +250,7 @@ img {
     /****-Rest details*****/
     #maincontent {
         /*width: 70%;*/
-        padding: 0 90px;
+        padding: 0 50px;
     }
     #breadcrumb li {
         font-size: 17px;
@@ -256,20 +264,36 @@ img {
     .middle-nav {
         display: flex;
     }
+    .middle {
+        display: flex;
+    }
     #map-container {
         width: 40%;
-        min-width: 320px;
+        min-width: 370px;
+        max-width: 420px;
         /*width: 330px;*/
-        height: 240px;
+        height: 500px;
         padding: 0 20px;
     }
     #map {
-        height: 240px;
+        height: 500px;
         width: 100%;
     }
+    .rest-list {
+        /*width: 60%;*/
+        margin: auto;
+        padding: 0;
+    }
+    #restaurants-list {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .filter-options {
-        width: 60%;
+        /*width: 60%;*/
         height: 60px;
+        padding: 0;
+        margin: 0;
+        align-self: auto;
     }
     /**Zoom and Logo of the map should not be above fixed elements when page is scrolled **/
     /*.leaflet-top, .leaflet-bottom {*/
@@ -279,5 +303,20 @@ img {
     }
     .inside #map > div.leaflet-control-container > div.leaflet-bottom {
         padding-top: 230px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    #maincontent {
+        padding: 0 5px;
+        margin: 0;
+    }
+    #map-container {
+        width: 370px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #map {
+        width: 370px;
     }
 }
