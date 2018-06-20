@@ -1,28 +1,64 @@
-# Mobile Web Specialist Certification Course
+# Frontend-nanodegree-restaurant-reviews-app
 ---
-#### _Three Stage Course Material Project - Restaurant Reviews_
+===============================
 
-## Project Overview: Stage 1
+## Table of Contents
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+* [Overview](#overview)
+* [Prerequisites](#prerequisites)
+* [Languages used to build the game](#languages_used_to_build_the_game)
+* [Contributing](#contributing)
+* [Authors](#authors)
+* [License](#license)
+* [Acknowledgments](#acknowledgments)
 
-### Specification
+## Project Overview
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+In the **Restaurant Reviews** project, a static webpage has been converted to a mobile-ready web application. In this project, a static design that lacked accessibility has been converted to be:
+- _responsive_ on different sized displays,
+- _accessible_ for screen reader use,
+- and _a service worker_ has been added to create an offline experience for the app's users.
 
-### What do I do from here?
+ The code provided for this website had a lot of issues. It was barely usable on a desktop browser, much less a mobile device. It also didn’t include any standard accessibility features, and it didn’t work offline at all. My job was to update the code to resolve these issues while still maintaining the included functionality. 
+
+### Prerequisites / Instructions to open the app
+
+You need to have access to the Internet and a browser installed (preferably Google Chrome).
+
+To open the page:
 
 1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
 
 In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and make start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+When Python already installed, in the terminal write cd 'your folder path' and then inside your folder: python -m http.server 8000.
 
-### Note about ES6
+2. With your server running, visit the site: `http://localhost:8000`.
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+
+## Languages used to build the app
+
+•	HTML
+•	CSS
+•	JavaScript
+
+## Contributing
+
+This is the project of Udacity/Google Nanodegree FEWD.
+
+## Authors
+
+* **Karolina Gauvain**  - [Restaurant-reviews-app] (https://github.com/Karolik/Restaurant-reviews-app/)
+
+## License
+
+This project is licensed under the General License 
+
+## Acknowledgments
+
+* My mentor, Neil, for the guidance, support and motivation
+* https://www.w3schools.com/
+* https://developer.mozilla.org/
 
 
 
