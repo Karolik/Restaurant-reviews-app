@@ -1,4 +1,4 @@
- .header {
+  .header {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -215,9 +215,10 @@ img {
         padding: 0 20px;
     }
     #map-container {
-        width: 60%;
+        width: 80%;
         height: 350px;
         justify-content: center;
+        margin: auto;
         /*padding: 0 70px;*/
     }
     #map {
@@ -225,6 +226,16 @@ img {
         height: 350px;
         /*align-self: center;
         margin: auto; -- it doesn't work*/
+    }
+    .rest-list {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .filter-options {
+        margin: auto;
+        width: 80%;
     }
     #restaurants-list {
         padding-left: 10px;
@@ -269,8 +280,8 @@ img {
     }
     #map-container {
         width: 40%;
-        min-width: 370px;
-        max-width: 420px;
+        min-width: 440px;
+        /*max-width: 420px;*/
         /*width: 330px;*/
         height: 500px;
         padding: 0 20px;
@@ -312,11 +323,11 @@ img {
         margin: 0;
     }
     #map-container {
-        width: 370px;
+        width: 390px;
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 5px;
     }
     #map {
-        width: 370px;
+        width: 390px;
     }
 }
