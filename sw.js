@@ -1,11 +1,11 @@
-/* importScripts('/cache-polyfill.js'); -- I don't have it, maybe I can take from the project (it's necessary for other browsers)*/
-var staticCacheName = 'rest-review-v2';
+var staticCacheName = 'rest-review-v4';
 
 self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open(staticCacheName).then(function(cache) {
      return cache.addAll([
        '/skeleton',
+       '/',
        '/index.html',
        '/index.html?homescreen=1',
        '/?homescreen=1',
@@ -16,9 +16,7 @@ self.addEventListener('install', function(e) {
        '/js/main.js',
        '/js/dbhelper.js',
        '/js/restaurant_info.js',
-       '/img',
-       '/img/1-mission-chinese-food-small.jpg',
-       '/img/1-mission-chinese-food.jpg'
+       '/img'
      ]);
    })
  );
@@ -57,3 +55,5 @@ self.addEventListener('fetch', function(event) {
       })
     );
 });
+
+/* importScripts('/cache-polyfill.js'); -- (it's for other browsers)*/
