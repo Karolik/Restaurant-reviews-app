@@ -75,7 +75,7 @@ img {
 
 /* Style of the focussed element */
 :focus {
-    outline: 1px dotted #3740a8;
+    outline: 2px dashed #3740a8;
     box-shadow: 0 0 8px 3px
     rgba(255, 255, 255, 0.8);
 }
