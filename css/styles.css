@@ -160,7 +160,7 @@ nav h1 a {
   min-height: 200px;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -213,7 +213,6 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  /*width: 50%;*/
   width: 100%;
 }
 #restaurant-name {
@@ -227,7 +226,6 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-  /*width: 90%; to be removed */
   width: 100%;
 }
 #restaurant-address {
@@ -244,7 +242,6 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-  /*width: 90%; to remove */
   width: 100%;
 }
 #restaurant-container, #reviews-container {
