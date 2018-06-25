@@ -80,7 +80,21 @@ img {
     rgba(255, 255, 255, 0.8);
 }
 
-@media screen and (max-width: 599px) {
+/* When tabbing, there is the option: Skip the map and go directly filter results */
+.skip {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 2000;
+    font-size: 1.2em;
+}
+
+  .skip:focus {
+    top: 0;
+}
+
+
+@media screen and (max-width: 619px) {
     /* ====================== Home and Restaurant.html ====================== */
     .title {
         font-size: 30px;
@@ -207,14 +221,14 @@ img {
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 620px) and (max-width: 1009px) {
     /*body {
         width: 720px;
     }*/
     #maincontent {
         padding: 0 20px;
     }
-    #map-container {
+    .middle #map-container {
         width: 80%;
         height: 350px;
         justify-content: center;
@@ -257,7 +271,7 @@ img {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1010px) {
     /****-Rest details*****/
     #maincontent {
         /*width: 70%;*/
@@ -278,7 +292,7 @@ img {
     .middle {
         display: flex;
     }
-    #map-container {
+    .middle #map-container {
         width: 40%;
         min-width: 440px;
         /*max-width: 420px;*/
@@ -317,7 +331,7 @@ img {
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
+@media screen and (min-width: 1010px) and (max-width: 1200px) {
     #maincontent {
         padding: 0 5px;
         margin: 0;
