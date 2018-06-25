@@ -14,8 +14,9 @@
 
 <body>
   <header>
-    <nav>
+    <nav aria-labelledby="nav1">
       <h1 class="title"><a href="/">Restaurant Reviews</a></h1>
+      <a href="#neighborhoods-select" class="skip">Skip the map and go to Filter results</a>
     </nav>
   </header>
 
@@ -23,10 +24,10 @@
     <section class="middle">
       <!-- <section class="middle-nav"> -->
       <section id="map-container">
-        <div id="map" role="application" tabindex="0"></div>
+        <div id="map" title="Restaurants" role="application" tabindex="0"></div>
       </section>
       <section class="rest-list">
-        <section class="filter-options">
+        <section class="filter-options" role="navigation" aria-labelledby="nav2">
           <h2>Filter Results</h2>
           <label>
             <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
