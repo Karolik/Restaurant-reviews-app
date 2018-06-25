@@ -1,4 +1,4 @@
-var staticCacheName = 'rest-review-v5';
+var staticCacheName = 'rest-review-v8';
 
 self.addEventListener('install', function(e) {
  e.waitUntil(
