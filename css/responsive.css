@@ -185,7 +185,7 @@ img {
         justify-content: flex-start;
     }
     .filter-options h2 {
-        margin: 5px 15px;
+        margin: 5px 10px 0 10px;
         float: left;
     }
     .filter-options select {
