@@ -1,4 +1,4 @@
-  .header {
+ .header {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -185,7 +185,7 @@ img {
         justify-content: flex-start;
     }
     .filter-options h2 {
-        margin: 5 5;
+        margin: 5px 15px;
         float: left;
     }
     .filter-options select {
@@ -210,7 +210,7 @@ img {
     #restaurants-list .restaurant-img {
         width: 100%;
     }
-    #restaurants-list li h1 {
+    #restaurants-list li h2 {
         padding: 0 5px;
     }
     #restaurants-list p {
@@ -218,6 +218,7 @@ img {
     }
     #restaurants-list li a {
         margin: 0 5px;
+        position: static;
     }
 }
 
